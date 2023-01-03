@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react'
+import  Header  from './Components/Header'
+import Filters from './Components/Filters'
+import List from "./Components/List"
 
 function App() {
+
+  const [showFilters, setShowFilters] = useState(false)
+  const [location, setLocation] = useState('')
+  const [adults, setAdults] = useState(0)
+  const [children, setChildren] = useState(0)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+
+      <Header setShowFilters={setShowFilters} location={location} adults={adults} children={children} />
+
+      <Filters showFilters={showFilters} setShowFilters={setShowFilters} setLocation={setLocation} adults={adults} setAdults={setAdults} children={children} setChildren={setChildren} location={location} />
+
+      <List location={location} adults={adults} children={children} />
+
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

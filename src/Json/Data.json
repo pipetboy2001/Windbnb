@@ -1,0 +1,42 @@
+[
+    {
+        "city": "Santiago",
+        "country": "Chile",
+        "superHost": false,
+        "title": "Apartamento en el centro de Santiago",
+        "rating": 4.4,
+        "maxGuests": 3,
+        "type": "Entire apartment",
+        "beds": 2
+    },
+    {
+        "city": "Valparaiso",
+        "country": "Chile",
+        "superHost": false,
+        "title": "Bonito apartamento con vista al mar",
+        "rating": 4.2,
+        "maxGuests": 5,
+        "type": "Entire apartment",
+        "beds": 3
+    },
+    {
+        "city": "Santiago",
+        "country": "Chile",
+        "superHost": true,
+        "title": "Casa con arquitectura de la colonia",
+        "rating": 4.5,
+        "maxGuests": 10,
+        "type": "Entire house",
+        "beds": 6
+        },
+    {
+        "city": "Santiago",
+        "country": "Chile",
+        "superHost": false,
+        "title": "Apartamento cerca del Metro 'Los leones' ",
+        "rating": 4.48,
+        "maxGuests": 3,
+        "type": "Entire apartment",
+        "beds": null
+    }
+]
