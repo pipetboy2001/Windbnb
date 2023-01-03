@@ -4,7 +4,6 @@ import BoxItem from "./BoxItem"
 
 export default function List({ location, adults, children }) {
     const [items, setItems] = useState(data)
-
     const countNoOfFilteredItems = (locationFilter, guestsFilter) => {
         let count = 0
         items.map((item) => {
@@ -16,10 +15,7 @@ export default function List({ location, adults, children }) {
         })
         return count
     }
-
-
     const count = location ? countNoOfFilteredItems(location, adults + children) : countNoOfFilteredItems(null, adults + children)
-
     const list = location ? items.filter((item) => item?.city === location && adults + children <= item?.maxGuests) : items.filter((item) => adults + children <= item?.maxGuests)
 
     return (
