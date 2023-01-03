@@ -3,52 +3,36 @@ import { useState } from "react"
 import BoxItem from "./BoxItem"
 
 export default function List({ location, adults, children }) {
-
     const [items, setItems] = useState(data)
 
-    const countNoOfFilteredItems = () => {
+    const countNoOfFilteredItems = (locationFilter, guestsFilter) => {
         let count = 0
         items.map((item) => {
-            if (item?.city === location && item?.maxGuests >= adults + children) {
-                return count += 1
+            if (locationFilter && item?.city === locationFilter && item?.maxGuests >= guestsFilter) {
+                count += 1
+            } else if (!locationFilter && item?.maxGuests >= guestsFilter) {
+                count += 1
             }
         })
-        return count;
+        return count
     }
 
 
-    const countNoOfGuestFilteredItems = () => {
-        let count2 = 0
-        items.map((item) => {
-            if (item?.maxGuests >= adults + children) {
-                return count2 += 1
-            }
-        })
-        return count2;
-    }
+    const count = location ? countNoOfFilteredItems(location, adults + children) : countNoOfFilteredItems(null, adults + children)
+
+    const list = location ? items.filter((item) => item?.city === location && adults + children <= item?.maxGuests) : items.filter((item) => adults + children <= item?.maxGuests)
 
     return (
         <>
             <div className="list_top">
-                <h1>Finland</h1>
-                <h2>{location ? countNoOfFilteredItems() : countNoOfGuestFilteredItems()}+ stays</h2>
+                <h1>Chile</h1>
+                <h2>{count}+ stays</h2>
             </div>
-
-
-
-            {location ? <div className="list_top_section">
-                {items.map((item, i) => {
-                    if (item?.city === location && adults + children <= item?.maxGuests) {
-                        return <BoxItem item={item} key={i} />
-                    }
-                })}
-            </div> : <div className="list_top_section">
-                {items.map((item, i) => {
-                    if (adults + children <= item?.maxGuests) {
-                        return <BoxItem item={item} key={i} />
-                    }
-                })}
-            </div>}
+            <div className="list_top_section">
+                {list.map((item, i) => (
+                    <BoxItem item={item} key={i} />
+                ))}
+            </div>
         </>
     )
 }
