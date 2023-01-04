@@ -2,6 +2,7 @@ import { useState } from 'react'
 import  Header  from './Components/Header'
 import Filters from './Components/Filters'
 import List from "./Components/List"
+import {Footer} from './Components/Footer'
 
 function App() {
 
@@ -18,6 +19,9 @@ function App() {
       <Filters showFilters={showFilters} setShowFilters={setShowFilters} setLocation={setLocation} adults={adults} setAdults={setAdults} children={children} setChildren={setChildren} location={location} />
 
       <List location={location} adults={adults} children={children} />
+
+      <Footer/>
+
 
     </div>
   )
