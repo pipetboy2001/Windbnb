@@ -5,20 +5,25 @@
     margin-bottom: 16px;
 }
 
-.list_top>h1 {
-    margin: 0;
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.list_top>h2 {
-    margin: 0;
-    font-size: 1.2em;
-    color: gray;
-}
-
 .list_top_section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    cursor: pointer;
+}
+
+h1{
+    font-size: 24px;
+    font-weight: 600;
+    margin: 5px;
+    padding: 5px;
+    color: #000000;
+}
+
+h2{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 5px;
+    padding: 5px;
+    color: #000000;
 }
