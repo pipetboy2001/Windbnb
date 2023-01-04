@@ -1,0 +1,36 @@
+.box-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.box-item>div {
+    display: flex;
+    align-items: center;
+}
+
+.box-item>div>h2 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.box-item>div>h2>span {
+    color: orange;
+}
+
+.box-item>div>p {
+    margin: 0;
+    font-size: 0.9em;
+    color: gray;
+}
+
+.box-item>p {
+    margin: 8px 0 0;
+    font-size: 1em;
+    text-align: center;
+}

@@ -1,6 +1,7 @@
 import data from '../Json/Data.json'
 import { useState } from "react"
 import BoxItem from "./BoxItem"
+import '../Styles/List.css'
 
 export default function List({ location, adults, children }) {
     const [items, setItems] = useState(data)
@@ -21,8 +22,8 @@ export default function List({ location, adults, children }) {
     return (
         <>
             <div className="list_top">
-                <h1>Chile</h1>
-                <h2>{count}+ stays</h2>
+                <h1>Pais: Chile</h1>
+                <h2>Hay {count} disponibles</h2>
             </div>
             <div className="list_top_section">
                 {list.map((item, i) => (

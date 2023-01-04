@@ -1,4 +1,4 @@
-import "./../Styles/Filters.css"
+import '../Styles/Filters.css'
 import { AiOutlineSearch, AiOutlineClose } from "react-icons/ai"
 import { useState } from "react"
 
@@ -7,7 +7,7 @@ export default function Filters({ showFilters, setShowFilters, setLocation, adul
     return (
         <>
             {showFilters && (
-                <div>
+                <div className="filters">
                     <div>
                         <div>
                             <h2 onClick={() => setShowLocation(true)} >Location</h2>
