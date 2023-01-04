@@ -7,11 +7,13 @@ export default function Header({ setShowFilters, location, adults, children }) {
 
     return (
         <header className="Header">
-            <img src="../../public/Logo.svg" />
+            {/* Icono */}
+            <img className="Logo" src="https://raw.githubusercontent.com/pipetboy2001/Windbnb/c7754f256d8cbf5a8da7a08f33ab5939b20b18a0/public/Logo.svg" />
+            {/* Buscador */}
             <div className="Header_search">
                 <h2 onClick={() => setShowFilters(true)} className="desktopHeader_search_location">{locationText}</h2>
                 <h2 onClick={() => setShowFilters(true)} className="desktopHeader_search_guests">{guestsText}</h2>
-                <AiOutlineSearch onClick={() => setShowFilters(true)} />
+                <AiOutlineSearch className="AiOutlineSearch" onClick={() => setShowFilters(true)} />
             </div>
         </header>
     )
