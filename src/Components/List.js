@@ -21,10 +21,12 @@ export default function List({ location, adults, children }) {
 
     return (
         <>
+        {/* Cantiadad disponible de casas/departamentos */}
             <div className="list_top">
                 <h1>Pais: Chile</h1>
                 <h2>Hay {count} disponibles</h2>
             </div>
+        {/* Listado de casas/departamentos */}
             <div className="list_top_section">
                 {list.map((item, i) => (
                     <BoxItem item={item} key={i} />

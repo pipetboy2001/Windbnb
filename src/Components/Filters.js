@@ -8,28 +8,25 @@ export default function Filters({ showFilters, setShowFilters, setLocation, adul
         <>
             {showFilters && (
                 <div className="filters">
-                    <div>
+                                        <div>
                         <div>
                             <h2 onClick={() => setShowLocation(true)} >Location</h2>
                             <span onClick={() => setShowLocation(true)} >{location ? `${location}` : "Add location"}</span>
                         </div>
 
-                        <div>
-                            <h2 onClick={() => setShowLocation(false)} >Guests</h2>
-                            <span onClick={() => setShowLocation(false)} >{adults + children === 0 ? "Add guests" : `${adults + children}`}</span>
-                        </div>
-
-                        <div >
-                            <button onClick={() => setShowFilters(false)} ><AiOutlineSearch />  Search</button>
-                        </div>
-                    </div>
-
-                    <div>
                         <div style={{ display: showLocation && "block", visibility: !showLocation && "hidden" }} >
                             <ul>
                                 <li onClick={() => setLocation("Santiago")} >Santiago , Chile</li>
                                 <li onClick={() => setLocation("Valparaiso")} >Valparaiso , Chile</li>
                             </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        
+                        <div>
+                            <h2 onClick={() => setShowLocation(false)} >Guests</h2>
+                            <span onClick={() => setShowLocation(false)} >{adults + children === 0 ? "Add guests" : `${adults + children}`}</span>
                         </div>
 
                         <div style={{ display: !showLocation && "block", visibility: showLocation && "hidden" }} >
@@ -57,6 +54,9 @@ export default function Filters({ showFilters, setShowFilters, setLocation, adul
 
                     <div>
                         <h2>Edit your search</h2>
+                        <div >
+                            <button onClick={() => setShowFilters(false)} ><AiOutlineSearch />  Search</button>
+                        </div>
                         <AiOutlineClose onClick={() => setShowFilters(false)} />
                     </div>
                 </div>

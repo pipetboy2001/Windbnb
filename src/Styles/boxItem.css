@@ -6,31 +6,109 @@
     border: 1px solid lightgray;
     border-radius: 8px;
     margin-bottom: 16px;
+    background-color: white;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    min-width: 200px;
+    max-width: 300px;
+    width: 20%;
+    height: 20%;
+    overflow: hidden;
+    margin: 1%;
 }
 
-.box-item>div {
-    display: flex;
-    align-items: center;
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    
 }
 
-.box-item>div>h2 {
-    margin: 0;
-    font-size: 1.2em;
+/* Hover hacer que se muestre hacia adelante al pasar por este */
+.box-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Ubicacion y rating comparten la misma linea*/
+.ubicacionRating {
+        display: flex;
+        text-align: center;
+    }
+
+    .rating {
+        color: #fcff38;
+        font-weight: bold;
+        flex-basis: 50%;
+    }
+
+    .ubicacion {
+        color: #FF385C;
+        font-weight: bold;
+        flex-basis: 50%;
+    }
+
+span{
+    color: #FF385C;
     font-weight: bold;
 }
 
-.box-item>div>h2>span {
-    color: orange;
-}
-
-.box-item>div>p {
-    margin: 0;
-    font-size: 0.9em;
-    color: gray;
-}
-
-.box-item>p {
-    margin: 8px 0 0;
-    font-size: 1em;
+.tipoYcama{
+    display: flex;
     text-align: center;
+}
+
+.type{
+    color: #FF385C;
+    font-weight: bold;
+}
+
+.bed{
+    color: #FF385C;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+}
+
+.container>p {
+    flex-basis: 60%;
+    /* ocupa el 60% del ancho disponible */
+}
+
+.superHost {
+    flex-basis: 40%;
+    /* ocupa el 40% restante del ancho disponible */
+    display: none;
+    /* oculta el elemento por defecto */
+}
+
+.superHost.show {
+    display: flex;
+    /* muestra el elemento cuando se aplique la clase "show" */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    background-color: rgb(245, 247, 138);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    min-width: 20px;
+    max-width: 30px;
+    width: 20%;
+    height: 20%;
+    overflow: hidden;
+}
+
+/* Hover hacer que se muestre hacia adelante al pasar por este */
+.superHost:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2);
 }

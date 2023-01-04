@@ -3,40 +3,110 @@
         "city": "Santiago",
         "country": "Chile",
         "superHost": false,
-        "title": "Apartamento en el centro de Santiago",
+        "title": "Apartamento estilista en el centro de la ciudad",
         "rating": 4.4,
         "maxGuests": 3,
-        "type": "Entire apartment",
-        "beds": 2
+        "type": "Departamento",
+        "beds": 2,
+        "photo": "https://images.unsplash.com/photo-1505873242700-f289a29e1e0f?ixlib=rb-1.2.1&auto=format&fit=crop&w=2255&q=80"
     },
     {
         "city": "Valparaiso",
         "country": "Chile",
         "superHost": false,
-        "title": "Bonito apartamento con vista al mar",
+        "title": "Bonito apartamento en centro de Santiago",
         "rating": 4.2,
         "maxGuests": 5,
-        "type": "Entire apartment",
-        "beds": 3
+        "type": "Departamento",
+        "beds": 3,
+        "photo": "https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
     },
     {
         "city": "Santiago",
         "country": "Chile",
         "superHost": true,
-        "title": "Casa con arquitectura de la colonia",
+        "title": "Interior artístico en casa de madera de 1900",
         "rating": 4.5,
         "maxGuests": 10,
-        "type": "Entire house",
-        "beds": 6
-        },
+        "type": "Casa",
+        "beds": 6,
+        "photo": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+    },
+    {
+        "city": "Valparaiso",
+        "country": "Chile",
+        "superHost": true,
+        "title": "Villa Aurora casa de huéspedes",
+        "rating": 4.75,
+        "maxGuests": 9,
+        "type": "Casa",
+        "beds": 2,
+        "photo": "https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2249&q=80"
+    },
+    {
+        "city": "Osorno",
+        "country": "Chile",
+        "superHost": true,
+        "title": "Una acogedora casa familiar",
+        "rating": 4.95,
+        "maxGuests": 6,
+        "type": "Casa",
+        "beds": 6,
+        "photo": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+    },
+    {
+        "city": "Osorno",
+        "country": "Chile",
+        "superHost": false,
+        "title": "Precioso estudio cerca de la estación de tren",
+        "rating": 4.68,
+        "maxGuests": 2,
+        "type": "Habitacion",
+        "beds": 4,
+        "photo": "https://images.unsplash.com/photo-1505693314120-0d443867891c?ixlib=rb-1.2.1&auto=format&fit=crop&w=2591&q=80"
+    },
+    {
+        "city": "Osorno",
+        "country": "Chile",
+        "superHost": false,
+        "title": "Pequeña casa tranquila en el centro de la ciudad",
+        "rating": 4.12,
+        "maxGuests": 6,
+        "type": "Casa",
+        "beds": 3,
+        "photo": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+    },
+    {
+        "city": "Osorno",
+        "country": "Chile",
+        "superHost": false,
+        "title": "Hermoso estudio nuevo cerca del centro",
+        "rating": 4.49,
+        "maxGuests": 2,
+        "type": "Departamento",
+        "beds": 1,
+        "photo": "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2255&q=80"
+    },
+    {
+        "city": "Osorno",
+        "country": "Chile",
+        "superHost": false,
+        "title": "Estudio a estrenar cerca del puerto",
+        "rating": 4.89,
+        "maxGuests": 6,
+        "type": "Departamento",
+        "beds": 3,
+        "photo": "https://images.unsplash.com/photo-1494203484021-3c454daf695d?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
+    },
     {
         "city": "Santiago",
         "country": "Chile",
         "superHost": false,
-        "title": "Apartamento cerca del Metro 'Los leones' ",
-        "rating": 4.48,
-        "maxGuests": 3,
-        "type": "Entire apartment",
-        "beds": null
+        "title": "Hermosa y cómoda casa antigua de madera",
+        "rating": 4.63,
+        "maxGuests": 10,
+        "type": "Casa",
+        "beds": 2,
+        "photo": "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
     }
 ]
