@@ -39,3 +39,10 @@
 .filters__options{
     cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+    .filters {
+        flex-direction: column;
+        /* hace que los elementos se muestren uno debajo del otro en pantallas pequeñas */
+    }
+}

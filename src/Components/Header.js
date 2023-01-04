@@ -2,8 +2,8 @@ import "../Styles/Header.css"
 import { AiOutlineSearch } from "react-icons/ai"
 
 export default function Header({ setShowFilters, location, adults, children }) {
-    const locationText = location ? `${location}` : "Add location"
-    const guestsText = adults + children === 0 ? "Add guests" : `${adults + children}`
+    const locationText = location ? `${location}` : "Añadir ubicacion"
+    const guestsText = adults + children === 0 ? "añadir Huéspedes" : `${adults + children}`
     
     return (
         <header className="Header">
